@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.dib.skyspy">
+    package="com.example.skyspy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name="com.dib.skyspy.FlightApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:name=".FlightApplication"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SkySpy">
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+        <activity android:name="com.dib.skyspy.FlightListActivity"></activity>
+        <activity android:name="com.dib.skyspy.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
