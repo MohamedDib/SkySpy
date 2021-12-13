@@ -13,6 +13,11 @@
         <entry key="..\:/Users/moham/Desktop/M2 Corte/Android/Project/app/src/main/res/layout-w500dp/activity_flight_list.xml" value="0.1" />
         <entry key="..\:/Users/moham/Desktop/M2 Corte/Android/Project/app/src/main/res/layout/activity_flight_list.xml" value="0.1" />
         <entry key="..\:/Users/moham/Desktop/M2 Corte/Android/Project/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/moham/Desktop/M2 Corte/Android/Project/app/src/main/res/layout/activity_main_v0.xml" value="0.371875" />
+        <entry key="..\:/Users/moham/Desktop/M2 Corte/Android/Project/app/src/main/res/layout/flight_list_fragment.xml" value="0.371875" />
+        <entry key="..\:/Users/moham/Desktop/M2 Corte/Android/Project/app/src/main/res/layout/flight_map_fragment.xml" value="0.371875" />
+        <entry key="..\:/Users/moham/Desktop/M2 Corte/Android/Project/app/src/main/res/layout/flightcell_view.xml" value="0.5" />
+        <entry key="..\:/Users/moham/Desktop/M2 Corte/Android/Project/app/src/main/res/layout/my_action_bar.xml" value="0.371875" />
       </map>
     </option>
   </component>
