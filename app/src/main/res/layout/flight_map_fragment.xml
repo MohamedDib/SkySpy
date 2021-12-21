@@ -1,30 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.dib.skyspy.FlightMapFragment"
     android:background="#FFF">
 
-    <RelativeLayout
-        android:id="@+id/map_container"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_weight="50">
+        android:layout_height="match_parent">
 
-        <com.google.android.gms.maps.MapView
-            android:id="@+id/flight_map"
+        <RelativeLayout
+            android:id="@+id/map_container"
             android:layout_width="match_parent"
-            android:layout_height="200dp" />
+            android:layout_height="500dp"
+            android:layout_weight="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-    </RelativeLayout>
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/flight_map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
 
-    <TextView
-        android:id="@+id/textview_callsign"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="20"
-        android:text="Map"
-        android:textSize="30sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/map_container" />
+
+        <TextView
+            android:id="@+id/textview_callsign"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="43dp"
+            android:layout_weight="20"
+            android:text="Map"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.114"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.012" />
+
+        <Button
+            android:id="@+id/airplane_flights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_drawable"
+            android:drawableRight="@drawable/ic_airplane1_line"
+            android:text="Airplane's flights"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_callsign"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </RelativeLayout>
