@@ -28,16 +28,18 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/from_date_picker_bg" />
 
     <ImageView
-        android:id="@+id/imageViewFromDate2"
+        android:id="@+id/imageViewToDate"
         android:layout_width="200dp"
         android:layout_height="0dp"
+        android:layout_marginStart="5dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewFromDate"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_airport"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageViewFromDate"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="@+id/guideline2"
         app:layout_constraintVertical_bias="0.0"
@@ -115,23 +117,25 @@
         android:id="@+id/textview_from_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="102dp"
         android:text="21/01/22"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewFromDate"
         app:layout_constraintEnd_toEndOf="@+id/imageViewFromDate"
-        app:layout_constraintHorizontal_bias="0.551"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageViewFromDate"
         app:layout_constraintTop_toTopOf="@+id/imageViewFromDate"
-        app:layout_constraintVertical_bias="0.554" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textview_to_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="22/01/22"
-        app:layout_constraintBottom_toBottomOf="@+id/imageViewFromDate2"
-        app:layout_constraintEnd_toEndOf="@+id/imageViewFromDate2"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewToDate"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewToDate"
         app:layout_constraintHorizontal_bias="0.517"
-        app:layout_constraintStart_toStartOf="@+id/imageViewFromDate2"
+        app:layout_constraintStart_toStartOf="@+id/imageViewToDate"
         app:layout_constraintTop_toTopOf="@+id/guideline2"
         app:layout_constraintVertical_bias="0.554" />
 
